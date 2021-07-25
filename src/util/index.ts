@@ -27,7 +27,7 @@ export const useMount = (callback: () => void) => {
 
 // useDebounce 防抖
 // 用泛型来规范类型
-export const useDebounce = (value: unknown, delay?: number) => {
+export const useDebounce = <V>(value: V, delay?: number) => {
 
     const [debounceValue, setDebounceValue] = useState(value);
 
